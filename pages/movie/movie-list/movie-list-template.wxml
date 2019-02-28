@@ -1,0 +1,18 @@
+<!-- 更多电影展示模块 -->
+<import src="../movie-rating/movie-rating-template.wxml" />
+<template name="movie-list-template">
+  <view class="movie-wrap">
+    <view class="movie-content">
+      <image src="{{images.medium}}" class="poster"></image>
+      <view class="movie-basic">
+        <text class="name">{{title}}</text>
+        <text class="directors">导演：{{directors}}</text>
+        <text class="casts">主演：{{casts}}</text>
+        <text class="genres">类型：{{genres}}</text>
+        <template is="movie-rating-template" data="{{rating}}"></template>
+        <text class="wish-count">{{collectCount}}人想看</text>
+      </view>
+      <text class="ticket-btn">购票</text>
+    </view>
+  </view>
+</template>

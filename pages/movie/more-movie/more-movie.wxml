@@ -1,0 +1,14 @@
+<import src="../movie-list/movie-list-template.wxml" />
+<view class="container">
+  <view class="category">
+    <text>正在热映</text>
+    <text>即将上映</text>
+  </view>
+  <view class="movie-content">
+    <scroll-view scroll-y>
+      <block wx:for="{{inTheaters.movies}}" wx:for-item="movie" wx:key="key">
+        <template is="movie-list-template" data="{{...movie}}"></template>
+      </block>
+    </scroll-view>
+  </view>
+</view>

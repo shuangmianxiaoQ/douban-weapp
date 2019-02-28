@@ -1,0 +1,9 @@
+<!-- 电影评分模块 -->
+<template name="movie-rating-template">
+  <text class="rating-average0" wx:if="{{rating.average==0}}">暂无评分</text>
+  <view class="rating" wx:else>
+    <!--利用豆瓣评分星星的精灵图和背景图定位实现星级评分-->
+    <view class="rating-star star{{rating.stars/5}}"></view>
+    <text class="rating-average">{{rating.average}}</text>
+  </view>
+</template>

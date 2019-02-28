@@ -1,0 +1,32 @@
+@import "../movie-rating/movie-rating-template.wxss";
+
+.movie-warp {
+  display: inline-block;
+  margin: 0 10rpx;
+}
+
+.movie-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.poster {
+  width: 200rpx;
+  height: 280rpx;
+}
+
+.title {
+  width:200rpx;
+  font-size: 28rpx;
+  color: #333;
+  text-align: center;
+  margin-top: 8rpx;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;    /* 用省略符号来代表被修剪的文本。 */
+}
+.wish-count {
+  font-size: 24rpx;
+  color: #9e9e9e;
+}

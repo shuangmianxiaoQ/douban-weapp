@@ -1,0 +1,47 @@
+<import src="movie-grid/movie-grid-template.wxml" />
+<import src="selected-grid/selected-grid-template.wxml" />
+<view class="movie-container">
+  <view class="search">
+    <icon type="search" size="15" class="search-icon" />
+    <input type="text" class="search-content" placeholder="电影、影人、电视剧" placeholder-class="search-placeholder" bindtap="bindSearchTap" />
+  </view>
+  <view class="movie-list">
+    <view class="movie-head">
+      <text class="movie-category">{{inTheaters.categoryTitle}}</text>
+      <!-- dataset：组件中自定义数据，这些数据将会通过事件传递给SERVICE -->
+      <text class="more-movie" bindtap="bindMoreTap" data-type-id="inTheaters">更多</text>
+    </view>
+    <view class="movie-content">
+      <scroll-view scroll-x style="width:100%">
+        <block wx:for="{{inTheaters.movies}}" wx:for-item="movie" wx:key="key">
+          <template is="movie-grid-template" data="{{...movie}}"></template>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="movie-list">
+    <view class="movie-head">
+      <text class="movie-category">{{comingSoon.categoryTitle}}</text>
+      <text class="more-movie" bindtap="bindMoreTap" data-type-id="comingSoon">更多</text>
+    </view>
+    <view class="movie-content">
+      <scroll-view scroll-x>
+        <block wx:for="{{comingSoon.movies}}" wx:for-item="movie" wx:key="key">
+          <template is="movie-grid-template" data="{{...movie}}"></template>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="movie-list">
+    <view class="movie-head">
+      <text class="movie-category">精选榜单</text>
+    </view>
+    <view class="movie-content">
+      <scroll-view scroll-x>
+        <block wx:for="{{[top250, weekly, newMovies, usBox]}}" wx:for-item="select" wx:key="key">
+          <template is="selected-grid-template" data="{{select}}"></template>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+</view>

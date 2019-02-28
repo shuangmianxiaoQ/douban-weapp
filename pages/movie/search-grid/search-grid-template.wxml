@@ -1,0 +1,13 @@
+<import src="../movie-rating/movie-rating-template.wxml" />
+<template name="search-grid-template">
+  <view class="movie-wrap">
+    <view class="movie-content">
+      <image src="{{images.small}}" class="poster"></image>
+      <view class="movie-basic">
+        <text class="name">{{title}}（{{year}}）</text>
+        <template is="movie-rating-template" data="{{rating}}"></template>
+        <text class="actors">{{directors}}/ {{casts}}</text>
+      </view>
+    </view>
+  </view>
+</template>

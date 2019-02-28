@@ -1,0 +1,40 @@
+@import "../movie-rating/movie-rating-template.wxss";
+
+.movie-wrap {
+  padding: 20rpx;
+  border-bottom: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.movie-content {
+  display: flex;
+}
+
+.poster {
+  width: 100rpx;
+  height: 125rpx;
+  margin-left: 10rpx;
+}
+
+.movie-basic {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* 用省略符号来代表被修剪的文本。 */
+  word-break: keep-all;
+}
+
+.name {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #3377AA;
+}
+
+.actors {
+  font-size: 24rpx;
+  color: #4a4a4a;
+}

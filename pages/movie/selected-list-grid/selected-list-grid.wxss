@@ -1,0 +1,48 @@
+@import "../movie-rating/movie-rating-template.wxss";
+
+.selected-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+  border-bottom: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.selected-rank {
+  margin: 20px auto;
+}
+
+.select-content {
+  display: flex;
+}
+
+.poster {
+  width: 240rpx;
+  height: 250rpx;
+  margin-left: 10rpx;
+}
+
+.movie-basic {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 24rpx;
+  color: #666;
+  line-height: 2em;
+  margin-left: 20rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* 用省略符号来代表被修剪的文本。 */
+  word-break: keep-all;
+}
+
+.name {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #369;
+}
+
+.movie-rating {
+  display: flex;
+}

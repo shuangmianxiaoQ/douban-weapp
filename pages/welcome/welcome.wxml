@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="user-info">
+    <image src="{{userInfo.avatarUrl}}" class="user-avatar"></image>
+    <text class="user-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="entrance">
+    <text bindtap="bindEntranceTap">{{entranceTxt}}</text>
+  </view>
+</view>

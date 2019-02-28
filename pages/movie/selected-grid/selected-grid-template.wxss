@@ -1,0 +1,62 @@
+.selected-wrap {
+  display: inline-block;
+  border-radius: 20rpx;
+  margin: 0 12rpx;
+  box-sizing: border-box;
+}
+
+.selected-content {
+  width: 300rpx;
+  height: 300rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*精选榜单设置渐变背景*/
+.top250-background {
+  background: linear-gradient(#ff8c00, #f9ebcf);
+}
+
+/*口碑榜*/
+.weekly-background {
+  background: linear-gradient(#1fb552, #d4f1de);
+}
+
+/*新片榜*/
+.newMovies-background {
+  background: linear-gradient(#9957db, #ede1f3);
+}
+
+/*票房榜*/
+.usBox-background {
+  background: linear-gradient(#f85b84, #fee4ef);
+}
+
+.category {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 30rpx;
+}
+
+.desc {
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.selected-poster {
+  margin-top: 16rpx;
+}
+
+.selected-poster image:first-child,
+.selected-poster image:last-child {
+  width: 72rpx;
+  height: 110rpx;
+  margin-bottom: 15rpx;
+}
+
+.selected-poster image:nth-child(2) {
+  width: 100rpx;
+  height: 148rpx;
+}

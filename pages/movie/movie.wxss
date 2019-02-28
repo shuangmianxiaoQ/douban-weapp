@@ -1,0 +1,65 @@
+@import "movie-grid/movie-grid-template.wxss";
+@import "selected-grid/selected-grid-template.wxss";
+
+.search {
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  padding: 12rpx 30rpx;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.search-icon {
+  height: 30rpx;
+}
+
+.search-content {
+  width: 80%;
+  margin: 0 20rpx;
+  color: #333;
+}
+
+.movie-list {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  margin: 24rpx 0;
+  padding: 24rpx;
+}
+
+.movie-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10rpx;
+}
+
+.movie-category {
+  font-size: 36rpx;
+  color: #4a4a4a;
+}
+
+.more-movie {
+  font-size: 28rpx;
+  color: #32cd32;
+}
+
+/* CSS绘制大于号图标，将上有边框顺时针旋转45度 */
+.more-movie::after {
+  content: "";
+  display: inline-block;
+  width: 12rpx;
+  height: 12rpx;
+  border-top: 1px solid #32cd32;
+  border-right: 1px solid #32cd32;
+  transform: rotate(45deg);
+  margin-bottom: 2rpx;
+}
+
+.movie-content {
+  width: 100%;
+  margin-top: 16rpx;
+  box-sizing: border-box;
+  white-space: nowrap;
+}

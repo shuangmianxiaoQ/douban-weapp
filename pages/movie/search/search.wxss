@@ -1,0 +1,28 @@
+@import "../search-grid/search-grid-template.wxss";
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  padding: 12rpx 30rpx;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.search-icon {
+  height: 30rpx;
+}
+
+.search-content {
+  width: 80%;
+  margin: 0 20rpx;
+  color: #333;
+}

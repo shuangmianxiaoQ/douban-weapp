@@ -1,0 +1,11 @@
+<!-- 首页电影展示模块 -->
+<import src="../movie-rating/movie-rating-template.wxml" />
+<template name="movie-grid-template">
+  <view class="movie-warp" data-id="id">
+    <view class="movie-content">
+      <image src="{{images.medium}}" class="poster"></image>
+      <text class="title">{{title}}</text>
+      <template is="movie-rating-template" data="{{rating}}"></template>
+    </view>
+  </view>
+</template>

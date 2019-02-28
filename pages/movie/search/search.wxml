@@ -1,0 +1,16 @@
+<import src="../search-grid/search-grid-template.wxml" />
+<view class="container">
+  <view class="search">
+    <icon type="search" size="15" class="search-icon" />
+    <!-- bindinput：用户输入时触发 -->
+    <input type="text" class="search-content" placeholder="电影、影人、电视剧" placeholder-class="search-placeholder" value="{{searchValue}}" bindinput="bindSearchInput" />
+    <text bindtap="bindCancelSearchTap">取消</text>
+  </view>
+  <view>
+    <scroll-view scroll-y>
+      <block wx:for="{{searchResult.movies}}" wx:for-item="movie" wx:key="key">
+        <template is="search-grid-template" data="{{...movie}}"></template>
+      </block>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+<!--精选榜单模块-->
+<template name="selected-grid-template">
+  <view class="selected-wrap {{select.settedKey}}-background">
+    <view class="selected-content">
+      <text class="category">{{select.categoryTitle}}</text>
+      <text class="desc">{{select.desc}}</text>
+      <view class="selected-poster">
+        <image src="{{select.movies[1].images.small}}"></image>
+        <image src="{{select.movies[0].images.medium}}"></image>
+        <image src="{{select.movies[2].images.small}}"></image>
+      </view>
+    </view>
+  </view>
+</template>
